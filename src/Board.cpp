@@ -39,7 +39,6 @@
 #include <map>
 #include <algorithm>
 #include <cstdio>
-#include <algorithm>
 
 #if defined( max )
 #undef max
