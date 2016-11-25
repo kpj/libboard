@@ -161,3 +161,15 @@ Color::tikz() const
 
 
 } // namespace LibBoard
+
+std::ostream &
+operator<<( std::ostream & out, const LibBoard::Color & c )
+{
+    return out
+      << "Color("
+      << static_cast<unsigned>(c.red()) << ","
+      << static_cast<unsigned>(c.green()) << ","
+      << static_cast<unsigned>(c.blue()) << ","
+      << static_cast<unsigned>(c.alpha())
+      << ")";
+}

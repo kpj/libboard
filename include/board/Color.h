@@ -202,4 +202,6 @@ inline unsigned char Color::alpha() const { return _alpha; }
 
 }
 
+std::ostream & operator<<( std::ostream & out, const LibBoard::Color & c );
+
 #endif // _COLOR_H_
